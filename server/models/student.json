@@ -15,7 +15,17 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "courses": {
+      "type": "hasMany",
+      "model": "Course",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      },
+      "through": "Enrollment"
+    }
+  },
   "acls": [],
   "methods": {}
 }
