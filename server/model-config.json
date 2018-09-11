@@ -42,5 +42,9 @@
   "Course": {
     "dataSource": "db",
     "public": true
+  },
+  "Enrollment": {
+    "dataSource": "db",
+    "public": true
   }
 }
