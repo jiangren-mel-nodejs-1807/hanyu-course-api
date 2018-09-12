@@ -13,12 +13,20 @@
       "./mixins"
     ]
   },
-  "User": {
-    "dataSource": "db"
+  "Member": {
+    "dataSource": "db",
+    "public": true
   },
   "AccessToken": {
     "dataSource": "db",
-    "public": false
+    "public": false,
+    "relations": {
+      "member": {
+        "type": "belongsTo",
+        "model": "Member",
+        "foreignKey": ""
+      }
+    }
   },
   "ACL": {
     "dataSource": "db",
